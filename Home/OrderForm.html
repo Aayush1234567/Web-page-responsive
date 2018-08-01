@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    ﻿
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style type="text/css">
+        .product_view .modal-dialog {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .pre-cost {
+            text-decoration: line-through;
+            color: #a5a5a5;
+        }
+
+        .space-ten {
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #0c1a1e;
+            min-height: 350px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .footerleft {
+            margin-top: 50px;
+            padding: 0 36px;
+        }
+
+        .logofooter {
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .footerleft p {
+            color: #fff;
+            font-size: 12px !important;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .footerleft p i {
+            width: 20px;
+            color: #999;
+        }
+
+        .paddingtop-bottom {
+            margin-top: 50px;
+        }
+
+        .footer-ul {
+            list-style-type: none;
+            padding-left: 0px;
+            margin-left: 2px;
+        }
+
+        .social-network a.icoRss:hover {
+            background-color: #F56505;
+        }
+
+        .social-network a.icoFacebook:hover {
+            background-color: #3B5998;
+        }
+
+        .social-network a.icoTwitter:hover {
+            background-color: #33ccff;
+        }
+
+        .social-network a.icoGoogle:hover {
+            background-color: #BD3518;
+        }
+
+        .social-network a.icoVimeo:hover {
+            background-color: #0590B8;
+        }
+
+        .social-network a.icoLinkedin:hover {
+            background-color: #007bb7;
+        }
+
+        .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+        .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+            color: #fff;
+        }
+
+        a.socialIcon:hover, .socialHoverClass {
+            color: #44BCDD;
+        }
+
+        .social-circle li a {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .social-circle li i {
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .social-circle li a:hover i, .triggeredHover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms--transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .social-circle i {
+            color: #fff;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        @media (min-width: 768px) {
+            .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+                margin-left: 25%;
+            }
+        }
+
+        .footer-ul li {
+            line-height: 29px;
+            font-size: 12px;
+        }
+
+        .footer-ul li a {
+            color: #a0a3a4;
+            transition: color 0.2s linear 0s, background 0.2s linear 0s;
+        }
+
+        .footer-ul i {
+            margin-right: 10px;
+        }
+
+        .footer-ul li a:hover {
+            transition: color 0.2s linear 0s, background 0.2s linear 0s;
+            color: #ff670f;
+        }
+
+
+    </style>
+</head>
+<body>
+<nav class="nav navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#GetAll">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" style="color: black; background-color: honeydew" href="Home.html">Bazaar
+                ceramics</a>
+        </div>
+        <div class="collapse navbar-collapse" id="GetAll">
+            <ul class="nav navbar-nav">
+                <li><a style="color: honeydew" href="Home.html" class="active">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Products.html">Products</a></li>
+
+                <li><a href="OrderForm.html">Order</a></li>
+                <li><a href="Collections.html">Exclusive Collections</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="container" style="height: 1200px">
+
+
+    <h1>Customer Details:</h1>
+    <TABLE BORDER="1">
+        <tr>
+            <td>Family Name:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Given Name:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Phone #:</td>
+            <td><INPUT type="tel" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Postal address:</td>
+            <td><INPUT type="text" name="email" size="25"></td>
+        </tr>
+    </TABLE>
+
+
+    <h1>Products Details:</h1>
+    <TABLE BORDER="1" style=" border-radius: .2em">
+        <tr>
+            <td>Product Title:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Products Description:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Quantity required:</td>
+            <td><INPUT type="tel" name="name" size="25"></td>
+        </tr>
+    </TABLE>
+    <h1>Products:</h1>
+    <TABLE BORDER="1" style=" border-radius: .2em">
+        <tr>
+            <td>Product Title:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Products Description:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Quantity required:</td>
+            <td><INPUT type="tel" name="name" size="25"></td>
+        </tr>
+
+    </TABLE>
+
+    <TABLE BORDER="1" style="margin-top: 2%;  border-radius: .2em">
+        <tr>
+            <td>Product Title:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Products Description:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Quantity required:</td>
+            <td><INPUT type="tel" name="name" size="25"></td>
+        </tr>
+
+    </TABLE>
+
+    <TABLE BORDER="1" style="margin-top: 2%; border-radius: .4em">
+        <tr>
+            <td>Product Title:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Products Description:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Quantity required:</td>
+            <td><INPUT type="tel" name="name" size="25"></td>
+        </tr>
+
+    </TABLE>
+
+    <h1>Payment Details:</h1>
+    <TABLE BORDER="1">
+        <tr>
+            <td>Name on credit Card:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Credit Card #:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Expiry Date #:</td>
+            <td><INPUT type="tel" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Credit card type:</td>
+            <td><INPUT type="text" name="email" size="25"></td>
+        </tr>
+    </TABLE>
+
+    <h1>Delivery Details:</h1>
+    <TABLE BORDER="1">
+        <tr>
+            <td>Deliver to (name):</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Delivery Address:</td>
+            <td><INPUT type="text" name="name" size="25"></td>
+        </tr>
+        <tr>
+            <td>Delivery instruction:</td>
+            <td><INPUT type="tel" name="name" size="25"></td>
+        </tr>
+
+    </TABLE>
+
+
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+                <div class="logofooter"> About us</div>
+                <p>Our vision It is a custom manufacturer utilizing wide format dye sublimation and other printing
+                    capabilities onto fabric, apparel, home decor, accessories and more. Our specialty is creating
+                    private labeled custom products for retail companies and private drop shipping to their customers.
+
+                    We sell wholesale only – Business to Business.</p>
+                <p><i class="fa fa-map-pin"></i> 210, Sydney Tower, Blackhood ,Sydney -        1134565, AUSTRALIA</p>
+                <p><i class="fa fa-phone"></i> Phone (Sydney) : +91 0912 457 801</p>
+                <p><i class="fa fa-envelope"></i> E-mail : SamipDahal123@gmail.com</p>
+
+            </div>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">GENERAL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> Career</a></li>
+                    <li><a href="#"> Privacy Policy</a></li>
+                    <li><a href="#"> Terms & Conditions</a></li>
+                    <li><a href="#"> Client Gateway</a></li>
+                    <li><a href="#"> Ranking</a></li>
+                    <li><a href="#"> Case Studies</a></li>
+                    <li><a href="#"> Frequently Ask Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom" style="color: lightblue">
+
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                    <p>Delivered our goods to new IT company <span>May 12,2017</span></p>
+                    <p>Delivered our goods to new hotel and bar <span>June 3,2017</span></p>
+                    <p>Delivered our goods to new Bank <span>April 24,2017</span></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
+                     data-height="300" data-small-header="false" style="margin-bottom:15px;"
+                     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+                    <div class="col-md-12">
+                        <ul class="social-network social-circle" style="float: left">
+                            <li><a href="#" class="icoRss" style="float: left" title="Rss"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-instagram"
+                                                                                    aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>

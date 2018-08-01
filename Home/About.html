@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    ﻿
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <style type="text/css">
+        .product_view .modal-dialog {
+            max-width: 800px;
+            width: 100%;
+        }
+
+
+
+        footer {
+            background-color: #0c1a1e;
+            min-height: 350px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .footerleft {
+            margin-top: 50px;
+            padding: 0 36px;
+        }
+
+        .logofooter {
+            margin-bottom: 10px;
+            font-size: 25px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .footerleft p {
+            color: #fff;
+            font-size: 12px !important;
+            font-family: 'Open Sans', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .footerleft p i {
+            width: 20px;
+            color: #999;
+        }
+
+        .paddingtop-bottom {
+            margin-top: 50px;
+        }
+
+        .footer-ul {
+            list-style-type: none;
+            padding-left: 0px;
+            margin-left: 2px;
+        }
+
+        .social-network a.icoRss:hover {
+            background-color: #F56505;
+        }
+
+        .social-network a.icoFacebook:hover {
+            background-color: #3B5998;
+        }
+
+        .social-network a.icoTwitter:hover {
+            background-color: #33ccff;
+        }
+
+        .social-network a.icoGoogle:hover {
+            background-color: #BD3518;
+        }
+
+        .social-network a.icoVimeo:hover {
+            background-color: #0590B8;
+        }
+
+        .social-network a.icoLinkedin:hover {
+            background-color: #007bb7;
+        }
+
+        .social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+        .social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+            color: #fff;
+        }
+
+        a.socialIcon:hover, .socialHoverClass {
+            color: #44BCDD;
+        }
+
+        .social-circle li a {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+        }
+
+        .social-circle li i {
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        .social-circle li a:hover i, .triggeredHover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms--transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .social-circle i {
+            color: #fff;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        @media (min-width: 768px) {
+            .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+                margin-left: 25%;
+            }
+        }
+
+        .footer-ul li {
+            line-height: 29px;
+            font-size: 12px;
+        }
+
+        .footer-ul li a {
+            color: #a0a3a4;
+            transition: color 0.2s linear 0s, background 0.2s linear 0s;
+        }
+
+        .footer-ul i {
+            margin-right: 10px;
+        }
+
+        .footer-ul li a:hover {
+            transition: color 0.2s linear 0s, background 0.2s linear 0s;
+            color: #ff670f;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<nav class="nav navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#GetAll">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <a class="navbar-brand" style="color: black; background-color: honeydew" href="Home.html">Bazaar
+                ceramics</a>
+        </div>
+        <div class="collapse navbar-collapse" id="GetAll">
+            <ul class="nav navbar-nav">
+                <li><a style="color: honeydew" href="Home.html" class="active">Home</a></li>
+                <li><a href="About.html">About us</a></li>
+                <li><a href="Products.html">Products</a></li>
+
+                <li><a href="OrderForm.html">Order</a></li>
+                <li><a href="Collections.html">Exclusive Collections</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<div class="container">
+    <img src="Image/first.jpg" class="img-responsive">
+    <p style="font-family: cursive; width: 70%; padding: 1px">Bazaar Ceramics Studio has been operating for 20 years. We started as a
+        small collective, operating in the
+        picturesque township of Hahndorf, South Australia - known for its quality arts and crafts. Over the years the
+        studio has passed through a number of transformations. In the first 7 years of its existence - as a
+        co-operative, it was well known for producing quality domestic ware and fine individually designed art pieces.
+        Each member of the co-operative was responsible for designing, throwing, glazing and firing their own work. A
+        gallery director was employed to look after the gallery and all aspects of marketing.
+        As the reputation of the studio grew nationally, and production expanded to meet demand, the structure of the
+        business changed to its present form. Kim Hayward bought the business and moved into larger premises in Stepney,
+        Adelaide. The production staff increased and currently includes a production manager, 2 full time ceramic
+        designers and 6 production potters.
+        Bazaar Ceramics has a wide range of products to meet the needs of clients both nationally and internationally.
+        The studio produces exquisite one off sculptural pieces for the individual and corporate collector. Commissions
+        make up approximately 40% of this work. These pieces can be found in board rooms, international hotels and
+        private homes as far away as the US and Germany.
+        Bazaar Ceramics also produce unique, individually designed domestic ware, including full dinner sets and
+        ovenware.</p>
+    <img src="Image/methods.jpg" class="img-responsive">
+    <p style="font-family: cursive; width: 73%">
+        Forming<br>
+        Ceramic forming techniques are ways of forming ceramic shapes. This can be used to make everyday tableware from
+        teapots, to engineering ceramics such as computer parts. Methods for forming powders of ceramic raw materials
+        into complex shapes are desirable in many areas of technology. For example, such methods are required for
+        producing advanced, high-temperature structural parts such as heat engine components, recuperators and the like
+        from powders of ceramic raw materials. Typical parts produced with this production operation include impellers
+        made from stainless steel, bronze, complex cutting tools, plastic mould tooling, and others. Typical materials
+        used are: wood, metal, water, plaster, epoxy and STLs, silica, and zirconia. This production operation is well
+        known for providing tools with dimensional stability, surface quality, density and uniformity. For instance, on
+        the slip casting process the cast part is of high concentration of raw materials with little additive, this
+        improves uniformity. But also, the plaster mould draws water from the poured slip to compact and form the
+        casting at the mould surface. This forms a dense cast.
+        Glazing<br>
+        Unlike their lower-fired counterparts, porcelain wares do not need glazing to render them impermeable to liquids
+        and for the most part are glazed for decorative purposes and to make them resistant to dirt and staining. Many
+        types of glaze, such as the iron-containing glaze used on the celadon wares of Longquan, were designed
+        specifically for their striking effects on porcelain.
+        Decoration<br>
+        Porcelain wares may be decorated under the glaze using pigments that include cobalt and copper or over the glaze
+        using coloured enamels. Like many earlier wares, modern porcelains are often biscuit-fired at around 1,000
+        degrees Celsius, coated with glaze and then sent for a second glaze-firing at a temperature of about 1,300
+        degrees Celsius or greater. Another early method is once-fired where the glaze is applied to the unfired body
+        and the two fired together in a single operation.
+        Firing<br>
+        In this process, green (unfired) ceramic wares are heated to high temperatures in a kiln to permanently set
+        their shapes. Porcelain is fired at a higher temperature than earthenware so that the body can vitrify and
+        become non-porous.
+    </p>
+
+</div>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 footerleft ">
+                <div class="logofooter"> About us</div>
+                <p>Our vision It is a custom manufacturer utilizing wide format dye sublimation and other printing
+                    capabilities onto fabric, apparel, home decor, accessories and more. Our specialty is creating
+                    private labeled custom products for retail companies and private drop shipping to their customers.
+
+                    We sell wholesale only – Business to Business.</p>
+                <p><i class="fa fa-map-pin"></i> 210, Sydney Tower, Blackhood ,Sydney -        1134565, AUSTRALIA</p>
+                <p><i class="fa fa-phone"></i> Phone (Sydney) : +91 0912 457 801</p>
+                <p><i class="fa fa-envelope"></i> E-mail : SamipDahal123@gmail.com</p>
+
+            </div>
+            <div class="col-md-2 col-sm-6 paddingtop-bottom">
+                <h6 class="heading7">GENERAL LINKS</h6>
+                <ul class="footer-ul">
+                    <li><a href="#"> Career</a></li>
+                    <li><a href="#"> Privacy Policy</a></li>
+                    <li><a href="#"> Terms & Conditions</a></li>
+                    <li><a href="#"> Client Gateway</a></li>
+                    <li><a href="#"> Ranking</a></li>
+                    <li><a href="#"> Case Studies</a></li>
+                    <li><a href="#"> Frequently Ask Questions</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom" style="color: lightblue">
+
+                <h6 class="heading7">LATEST POST</h6>
+                <div class="post">
+                    <p>Delivered our goods to new IT company <span>May 12,2017</span></p>
+                    <p>Delivered our goods to new hotel and bar <span>June 3,2017</span></p>
+                    <p>Delivered our goods to new Bank <span>April 24,2017</span></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 paddingtop-bottom">
+                <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline"
+                     data-height="300" data-small-header="false" style="margin-bottom:15px;"
+                     data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+                    <div class="col-md-12">
+                        <ul class="social-network social-circle" style="float: left">
+                            <li><a href="#" class="icoRss" style="float: left" title="Rss"><i class="fa fa-rss"></i></a>
+                            </li>
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-instagram"
+                                                                                    aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>
